@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  background: #FFF;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+//HEADER
+.header {
+  height: 57.6px;
+  background: rgba(238, 238, 238, 0.60);
+  border-radius: 20px 20px 0 0; 
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 60px;
+  
+
+  .headerLogo {
+    color: #000;
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 24px;
+  }
+
+  .headerTextplace {
+    width: 230px;
+    height: 44px;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin-right: 45px;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+
+  .headerTextplace::placeholder, .categoriesItem, .headerTown {
+    color: #000;
+    font-size: 16px;
+    font-family: Arial;
+    cursor: pointer;
+  }
+
+  .headerCategories {
+    margin-right: 174px;
+
+    .categoriesItem:hover {
+      color: #ffa218;
+    }
+    .categoriesItem:not(:last-child) {
+      margin-right: 53px;
+    }
+  }
+
+  .headerTown {
+    text-decoration-line: underline;
+    margin-right: 32px;
+  }
+
+  .headerIcon {
+    margin-right: 20px;
+    cursor: pointer;
+
+  }
+}
+
+//PREVIEW
+.preview {
+  height: 472px;
+  background: #F1F1F1;
+
+  .rightPreviewSide {
+    margin: 0 auto;
+    .previewBlock {
+
+      transform: translate(20px, -30px);
+
+      .previewHeading {
+        color: #000;
+        font-size: 24px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0 0 24px 0;
+      }
+  
+      .previewText {
+        color: #000;
+        font-size: 16px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 24px 0;
+      }
+  
+      .previewButton {
+        color: #FFF;
+        font-size: 20px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 10px;
+        background: #DB9969;
+        border: 0;
+        padding: 12.396px 62px 11.604px 61px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//CONTENT
+.content {
+  padding: 62px 62px 0 62px;
+
+  .headBlock {
+    margin-bottom: 32px;
+
+    .headText {
+      margin: 0;
+    }
+  }
+  .cardBox {
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    justify-content: center;
+    grid-column-gap: 28px;
+    grid-row-gap: 64px;
+    margin-bottom: 80px;
+    
+
+    .card {
+      .cardPreview {
+        border: 1px solid rgba(144, 144, 144, 0.70);
+        padding: 53px 53px 35px 52px;
+        margin-bottom: 32px;
+      }
+
+      .cardPreviewImage {
+        height: 100%;
+      }
+
+      .cardText {
+        margin-bottom: 16px;
+        
+        .cardHeading {
+          color: #000;
+          font-size: 18px;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          margin: 0 0 16px 0;
+          text-decoration: none;
+        }
+
+        .cardCash {
+          color: #000;
+          font-size: 18px;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          margin: 0;
+          text-decoration: none;
+        }
+      }
+
+      .cardHeart {
+        cursor: pointer;
+      }
+
+      .cardHeart:active {
+        transform: translateY(-2px);
+        text-shadow: 2px 2px 2px rgba(206,89,55,0);
+      }
+
+      .cardButton {
+        border-radius: 10px;
+        border: none;
+        background: #DB9969;
+        padding: 6px 38px 6px 39px;
+        color: #FFF;
+        font-size: 20px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 55px;
+        cursor: pointer;
+      }
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    }
+  }
+  
+}
+
+//COMMUNICATION
+.comm {
+  background: rgba(238, 206, 183, 0.22);
+  height: 286px;
+  padding-left: 63px;
+
+  .commTextBox {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 24px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 28px;
+  }
+
+  .commMail {
+    width: 532px;
+    height: 47px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    opacity: 0.30000001192092896;
+    background: #FFF;
+    font-size: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 12px 0 12px 30px;
+    margin-right: 30px;
+  }
+
+
+  .commButton {
+    border-radius: 10px;
+    border: none;
+    background: #DB9969;
+    padding: 12px 53px 12px 52px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+}
+
+
+//FOOTER
+.footer {
+  background: #B3A094;
+  height: 346px;
+  padding: 40px 0 0 59px;
+
+
+  .navMenu {
+
+    .navMenuTitle {
+      color: #FFF;
+      font-size: 20px;
+      font-family: Arial;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 10px;
+      text-decoration-line: underline;
+    }
+    
+    .navMenuLink {
+      list-style: none;
+      margin-bottom: 11px;
+
+      .navMenuItem {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 20px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+      }
+      .navMenuItem:hover {
+        color: #ffa218;
+      }
+    }
+  }
+
+  .navMenu:nth-child(2) {
+    margin: 0 350px 0 122px;
+  }
+
+
+  .socialTitle {
+    color: #FFF;
+    font-size: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 21px;
+  }
+
+  .socialIcon:not(:last-child) {
+    margin-right: 32px;
+    cursor: pointer;
+  }
+}
