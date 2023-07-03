@@ -8,7 +8,10 @@
   display: flex;
   justify-content: center;
   
-
+  .headerLink {
+    text-decoration: none;
+  }
+  
   .headerLogo {
     color: #000;
     font-size: 24px;

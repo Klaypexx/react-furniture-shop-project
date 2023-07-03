@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom';
 import style from './Header.module.scss'
 
 function Header() {
     return (
       <header className={style.header}>
-        <a className={style.headerLogo} href="/">IKEA</a>
+        <Link to="/" className={style.headerLink}>
+          <p className={style.headerLogo} href="/">IKEA</p>
+        </Link>
         <input type="text" className={style.headerTextplace} placeholder="Поиск"></input>
         <div className={style.headerCategories}>
+          
           <p className={style.categoriesItem}>Коллекции</p>
           <p className={style.categoriesItem}>Мебель</p>
           <p className={style.categoriesItem}>Освещение</p>

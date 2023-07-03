@@ -1,0 +1,44 @@
+.sliderStyles {
+    height: 100%;
+    position: relative;
+    padding-left: 40px;
+}
+
+.sliderBox {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 111px;
+
+    .leftArrowStyles {
+        height: 35px;
+        width: 35px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .rightArrowStyles {
+        height: 35px;
+        width: 35px;
+        z-index: 1;
+        cursor: pointer;
+    }    
+}
+
+.sliderImageBox {
+    text-align: center;
+
+    .slideImage {
+        width: 110px;
+        height: 110px;
+        
+    }    
+
+    .slideImage:not(:last-child) {
+        margin-right: 22px;
+    }
+
+    .activeSlideImage {
+        border: 1px solid #000;
+    } 
+}

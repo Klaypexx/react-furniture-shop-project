@@ -12,9 +12,11 @@
     }
     .cardText {
       margin-bottom: 16px;
-      display: flex;
-      flex-direction: column;
       
+      .cardLink {
+        text-decoration: none;
+      }
+
       .cardHeading {
         color: #000;
         font-size: 18px;
@@ -56,6 +58,11 @@
       line-height: normal;
       margin-right: 55px;
       cursor: pointer;
+    }
+
+    .addedColor {
+      background: rgb(170, 170, 170);
+      padding: 6px 37px 6px 39px;
     }
 }
 
